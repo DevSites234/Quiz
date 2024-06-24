@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+}
+
+button {
+    background-color: #00ff00;
+    color: #1c1c1c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #00cc00;
+}
+
+#quiz {
+    margin: 20px 0;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.answers {
+    list-style: none;
+    padding: 0;
+}
+
+.answers li {
+    margin: 10px 0;
+}
+
+.answers li button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.answers li button:hover {
+    background-color: #555;
+}
+
+.correct {
+    background-color: #00ff00 !important;
+}
+
+.incorrect {
+    background-color: #ff0000 !important;
+}
+
+.correct-answer {
+    background-color: #00ff00 !important;
+}
+
+#score {
+    margin-top: 20px;
+}
+
+#score p {
+    margin: 5px 0;
+}
+
+#lives img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+#results {
+    display: none;
+}
+
+#results.active {
+    display: block;
+}
+
+#results button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#retry {
+    background-color: #00ff00;
+    color: #1c1c1c;
+}
+
+#retry:hover {
+    background-color: #00cc00;
+}
+
+#exit {
+    background-color: #ff0000;
+    color: #1c1c1c;
+}
+
+#exit:hover {
+    background-color: #cc0000;
+}
+
+/* Estilos para as imagens das perguntas */
+img.question-image {
+    width: 100px;
+    height: 150px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

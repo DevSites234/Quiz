@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Wubba Lubba Dub Dub</title>
+    <link rel="stylesheet" href="styles2.css"> <!--REFERENCIANDO O ARQUIVO CSS-->
+    <style>
+        /* Estilos CSS aqui */
+        body {
+            background-color: black; /* Cor de fundo preta */
+            font-family: Arial, sans-serif; /* Fonte Arial */
+            text-align: center; /* Centraliza o conteúdo */
+        }
+        .container2 {
+            /* Estilos para o container da logo, se necessário */
+        }
+        button {
+            /* Estilos para os botões */
+        }
+        .btn-shine {
+            /* Estilos para o link COMPANY COPYRIGHT */
+        }
+
+    .loader {
+    display: none; /* Esconde a div por padrão */
+    width: 190px;
+    height: 10px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+    overflow: hidden;
+    margin: auto; /* Centraliza horizontalmente */
+}
+
+.loader span {
+    font: 700 22px monospace;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 150%;
+    height: 100%;
+    background-image: linear-gradient(332deg, #6bff7f, #32ff3c);
+    border-radius: inherit;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: load5123 1s infinite;
+}
+
+@keyframes load5123 {
+    50% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+}
+ 
+    </style>
+</head>
+<body>
+    <!-- Conteúdo HTML -->
+    <div class="container2">
+        <img src="logo.png" width="340" height="310" alt="Logo do jogo">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button id="btnJogar">JOGAR!</button>
+    <br>
+    <br>
+    <button id= "btnTutorial">TUTORIAL</button>
+    <br>
+    <br>
+    <button id="btnSobre"> SOBRE</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="loader">
+
+</div>
+
+
+    <!-- Script JavaScript para redirecionamento com delay -->
+    <script>
+    document.getElementById('btnJogar').addEventListener('click', function(event) {
+        event.preventDefault(); // Previne o comportamento padrão do link
+        
+        // Mostra a div 'loader'
+        document.querySelector('.loader').style.display = 'inline-block';
+
+        // Aguarda 4 segundos antes de redirecionar para 'quiz.html'
+        setTimeout(function() {
+            window.location.href = 'quiz.html';
+        }, 4000); // 4000 milissegundos = 4 segundos
+    });
+
+    
+    document.getElementById('btnTutorial').addEventListener('click', function(event) {
+        event.preventDefault(); // Previne o comportamento padrão do link
+        
+        // Mostra a div 'loader'
+        document.querySelector('.loader').style.display = 'inline-block';
+
+        // Aguarda 4 segundos antes de redirecionar para 'quiz.html'
+        setTimeout(function() {
+            window.location.href = 'tutorial.html';
+        }, 4000); // 4000 milissegundos = 4 segundos
+    });
+
+    document.getElementById('btnSobre').addEventListener('click', function(event) {
+        event.preventDefault(); // Previne o comportamento padrão do link
+        
+        // Mostra a div 'loader'
+        document.querySelector('.loader').style.display = 'inline-block';
+
+        // Aguarda 4 segundos antes de redirecionar para 'quiz.html'
+        setTimeout(function() {
+            window.location.href = 'infor.html';
+        }, 4000); // 4000 milissegundos = 4 segundos
+    });
+</script>
+
+</body>
+</html>
